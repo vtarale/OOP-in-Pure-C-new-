@@ -9,13 +9,13 @@ struct animal{
 struct cat{
     struct animal *inheritance;
     int (*speak)(struct cat *me);
-    int (*destruct)(struct animal **me);
+    int (*destruct)(struct cat **me);
 };
 
 struct dog{
     struct animal *inheritance;
     int (*speak)(struct dog *me);
-    int (*destruct)(struct animal **me);
+    int (*destruct)(struct dog **me);
 };
 
 void __define_cat_or_dog__(struct cat *c, struct dog *d);
