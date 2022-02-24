@@ -19,5 +19,6 @@ struct dog{
 };
 
 void __define_cat_or_dog__(struct cat *c, struct dog *d);
+void __inheritance__(struct cat **c, struct dog **d);
 
 #endif
